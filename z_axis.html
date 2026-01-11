@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-axis</title>
+    <style>
+         img{
+            width: 300px;
+            height: 200px;
+            object-fit: contain;
+        }
+        .boy{
+            z-index: 4;
+        }
+         /* .water{
+            z-index: -1;
+         }*/
+        .box{
+            position: relative;
+        }
+        .ring{
+            top: 120px;
+            z-index: 2;
+        }
+
+         /* .ring{
+            top:120px;
+         } */
+          
+          .water{
+            /* bottom: 300px; */
+             z-index: 1;
+          } 
+    </style>
+</head>
+<body>
+    <h3>Z-Axis</h3>
+    <div class="swim-container">
+        <div class="box boy">
+            <img src="./image/boy.webp" alt="">
+        </div>
+        <div class="box ring">
+            <img src="./image/swimm.jpg" alt="">
+        </div>
+        <div class="box water">
+            <img src="./image/water.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

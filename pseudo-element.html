@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-element</title>
+    <style>
+        h3{
+            font-size: 30px;
+        }
+        h3::after{
+            content: '.pdf';
+            color: peru;
+            font-size: 20px;
+            background-color: antiquewhite;
+        }
+         h3::before{
+            content: 'Start: ';
+            color: peru;
+        }
+        p{
+            font-size: 20px;
+        }
+        p::first-letter{
+            font-size: 50px;
+        }
+        p::first-line{
+            background-color: peachpuff;
+        }
+        ::selection{
+            color: thistle;
+            background-color: snow;
+        }
+    </style>
+</head>
+<body>
+    <h3>This is a Heading</h3>
+    <h3>This is a Heading</h3>
+    <h3>This is a Heading</h3>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, accusantium.</p>
+    <p>Dolor sit, amet consectetur adipisicing elit. Accusamus dolorem ratione temporibus eos vitae quasi error aliquam delectus quidem. Dolorum tempora mollitia incidunt possimus totam autem reiciendis, tenetur voluptatem laborum!</p>
+</body>
+</html>
